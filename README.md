@@ -15,7 +15,7 @@
 
 ### Mobile device
 
-- change the IP address at [line 70](https://github.com/hwsel/PEV/blob/main/android/StreamPack/demos/camera2/src/main/java/io/github/thibaultbee/streampack/camera2/ui/fragments/CameraFragment.kt#L70) to your server.
+- change the IP address at [line 77](https://github.com/hwsel/PEV/blob/main/android/StreamPack/demos/camera2/src/main/java/io/github/thibaultbee/streampack/camera2/ui/fragments/CameraFragment.kt#L77) to your server.
 - Compile the project and install the application `camera2` to the phone.
 
 ### Server
