@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        mavenLocal()
+    }
+}
+rootProject.name='StreamPack'
+
+include ':demo-camera'
+project(':demo-camera').projectDir = new File(rootDir, 'demos/camera')
+include ':demo-screenrecorder'
+project(':demo-screenrecorder').projectDir = new File(rootDir, 'demos/screenrecorder')
+
+include ':demo-camera2'
+project(':demo-camera2').projectDir = new File(rootDir, 'demos/camera2')
+
+apply from: 'core_settings.gradle'
+
